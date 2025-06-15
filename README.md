@@ -3,6 +3,9 @@ Unity's plugin to save data as simple as possible
 
 This project is licensed under the terms of the MIT license.
 
+Contact :
+Email: bedilketek@gmail.com
+
 Plugin's docs:
 
 English Version (Coming Soon) : 
