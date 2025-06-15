@@ -1,0 +1,19 @@
+{
+    "name": "KenanDev.SimpleSave.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:1b10b5abc0a2fee4ab7b1b46d3cd5e4a",
+        "GUID:10c631bffe865df42994089feca8e7fd"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "UNITY_EDITOR"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

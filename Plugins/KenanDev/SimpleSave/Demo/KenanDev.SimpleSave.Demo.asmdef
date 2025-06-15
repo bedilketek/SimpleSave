@@ -1,0 +1,17 @@
+{
+    "name": "KenanDev.SimpleSave.Demo",
+    "rootNamespace": "",
+    "references": [
+        "GUID:1b10b5abc0a2fee4ab7b1b46d3cd5e4a",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
