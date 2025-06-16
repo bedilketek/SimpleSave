@@ -254,7 +254,7 @@ namespace KenanDev.SimpleSave
                         }
                         catch (Exception e)
                         {
-                            Debug.LogError("Can't do reflection due to : " + e.Message);
+                            SimpleSaveDebugger.DebugError("Can't do reflection due to : " + e.Message);
                         }
                         // Debug.Log(gainedValue.GetType().Name);
                         break;

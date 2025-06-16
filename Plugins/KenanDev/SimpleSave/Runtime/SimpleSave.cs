@@ -486,7 +486,7 @@ namespace KenanDev.SimpleSave
             Type _type = typeof(T);
             if (_type.IsEquivalentTo(typeof(UnityEngine.Object)) || _type.IsSubclassOf(typeof(UnityEngine.Object)))
             {
-                Debug.LogError("Can't Save Unity Object ! ");
+                SimpleSaveDebugger.DebugError("Can't Save Unity Object ! ");
                 return;
             }
             GenericClass<T> genericClass = new(_value, classProjectName);
@@ -521,7 +521,7 @@ namespace KenanDev.SimpleSave
             IntData intData = saveDataBase as IntData;
             if (intData == null)
             {
-                Debug.LogError("Data with key : " + saveKey + "is not int value");
+                SimpleSaveDebugger.DebugError("Data with key : " + saveKey + "is not int value");
                 return -1;
             }
             return intData.IntValue;
@@ -583,7 +583,7 @@ namespace KenanDev.SimpleSave
             string[] splittedString = saveDataBase.StringSaveValue.Split("|");
             if (splittedString.Length != 3)
             {
-                Debug.LogError("Error occured possibly due to modified save data");
+                SimpleSaveDebugger.DebugError("Error occured possibly due to modified save data");
                 return null;
             }
             string typeFullAssemblyName = splittedString[1] + ", " + splittedString[0] + ", " + SimpleSaveHelper.HalfEndAssemblyName;
@@ -592,7 +592,7 @@ namespace KenanDev.SimpleSave
                 Type savedType = Type.GetType(typeFullAssemblyName);
                 if (savedType == null)
                 {
-                    Debug.LogError("There's no class with name : " + typeFullAssemblyName);
+                    SimpleSaveDebugger.DebugError("There's no class with name : " + typeFullAssemblyName);
                     return null;
                 }
                 Type genericType = typeof(GenericClass<>);
@@ -776,7 +776,7 @@ namespace KenanDev.SimpleSave
             string[] splittedString = stringSaveValue.Split("|");
             if (splittedString.Length != 3)
             {
-                Debug.LogError("Error occured possibly due to modified save data");
+                SimpleSaveDebugger.DebugError("Error occured possibly due to modified save data");
                 return;
             }
             classProjectName = splittedString[0];
@@ -789,7 +789,7 @@ namespace KenanDev.SimpleSave
             {
                 Type _type = typeof(T);
                 string typeName = _type.FullName;
-                Debug.LogError("Modified class with name" + typeName + ", or modified save file detected");
+                SimpleSaveDebugger.DebugError("Modified class with name" + typeName + ", or modified save file detected");
                 classValue = default(T);
             }
         }
@@ -830,7 +830,7 @@ namespace KenanDev.SimpleSave
         {
             if(keys.Count != values.Count)
             {
-                Debug.LogError("Different element count between keys and value ! ");
+                SimpleSaveDebugger.DebugError("Different element count between keys and value ! ");
                 return false;
             }
             Tkey comparedvalue = default(Tkey);
@@ -838,7 +838,7 @@ namespace KenanDev.SimpleSave
             {
                 if (tkey.Equals(comparedvalue))
                 {
-                    Debug.LogError("Same key value detected ! ");
+                    SimpleSaveDebugger.DebugError("Same key value detected ! ");
                     return false;
                 }
             }
@@ -918,7 +918,7 @@ namespace KenanDev.SimpleSave
             int keyIndex = keys.IndexOf(_key);
             if( keyIndex < 0 )
             {
-                Debug.LogWarning("Can't find data");
+                SimpleSaveDebugger.DebugWarning("Can't find data");
                 result = default;
                 return false;
             }
@@ -930,7 +930,7 @@ namespace KenanDev.SimpleSave
             int keyIndex = keys.IndexOf(_key);
             if( keyIndex < 0 )
             {
-                Debug.LogWarning("Can't find data");
+                SimpleSaveDebugger.DebugWarning("Can't find data");
                 return default;
             }
             return SimpleSaveHelper.DeepCopy(values[keyIndex]);

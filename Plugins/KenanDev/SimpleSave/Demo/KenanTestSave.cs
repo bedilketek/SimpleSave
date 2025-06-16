@@ -10,9 +10,7 @@ namespace KenanDev.SimpleSave.Demo
     public class KenanTestSave : MonoBehaviour, ISimpleSave
     {
         public string saveKey = "TestSaveKey";
-        [KenanSave(SaveDataType.Int, "Number")]
         public int num;
-        [KenanSave(SaveDataType.GenericClass)]
         public TestGood testGood;
         [HideInInspector]
         [Serializable]
