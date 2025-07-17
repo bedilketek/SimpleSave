@@ -1,0 +1,16 @@
+{
+    "name": "RomDev.SimpleSave.Test",
+    "rootNamespace": "",
+    "references": [
+        "GUID:1b10b5abc0a2fee4ab7b1b46d3cd5e4a"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
