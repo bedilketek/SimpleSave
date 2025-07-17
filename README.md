@@ -7,6 +7,9 @@ Contact :
 Email: bedilketek@gmail.com
 
 Download older versions of SimpleSave here : https://drive.google.com/drive/folders/12_CqSAIU6ufV1lNvZbRl7-2Tkanot1Wa?usp=sharing
+## Plugins Dependency
+This Plugin need these following plugins to work properly:
+- [AssetObjectLocator](https://github.com/bedilketek/AssetObjectLocator/tree/main)
 
 Plugin's docs:
 
